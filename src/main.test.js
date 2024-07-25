@@ -87,12 +87,6 @@ describe("Book App Frontend Testing", () => {
     await setDelay();
   });
 
-  it("Should Delete Book", async () => {
-    await getPageAndTitle("deleteBook", "Books");
-    await testMsg("Book Deleted - DELETE Request Success");
-    await setDelay();
-  });
-
   it("Should Open Authors Page", async () => {
     await getPageAndTitle("authors", "Authors", "id");
     await testMsg("Authors Found - GET Request Success");
@@ -133,6 +127,13 @@ describe("Book App Frontend Testing", () => {
   it("Should Delete Author", async () => {
     await getPageAndTitle("deleteAuthor", "Authors");
     await testMsg("Author Deleted Successfully");
+    await setDelay();
+  });
+
+  it("Should Delete Book", async () => {
+    await getElementAndClick("books");
+    await getPageAndTitle("deleteBook", "Books");
+    await testMsg("Book Deleted - DELETE Request Success");
     await setDelay();
   });
 
