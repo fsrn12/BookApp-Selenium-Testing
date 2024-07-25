@@ -1,0 +1,24 @@
+{
+  "name": "bookapp_selenium_test",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "selenium-webdriver": "^4.23.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@vitest/coverage-v8": "^2.0.4",
+    "chalk": "^5.3.0",
+    "prettier": "^3.3.3",
+    "vitest": "^2.0.4"
+  }
+}
